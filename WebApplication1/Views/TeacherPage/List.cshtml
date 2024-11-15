@@ -1,0 +1,13 @@
+@model IEnumerable<Cumulative1.Models.Teacher>
+<style>
+    h1 {color: pink;}
+</style>
+<h1>List of Students</h1>
+
+@foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
+{
+    <div>
+        <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId">@CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName</a>
+    </div>
+
+}
