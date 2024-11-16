@@ -4,18 +4,17 @@ namespace Cumulative1.Models
     {
         //Represents Teacher
 
-        //Teacher Id
+        //Teacher's Id
         public int TeacherId { get; set; }
-        //Teacher first name
+        //Frst name of the Teacher
         public string? TeacherFName { get; set; }
-        //Teacher first name
+        //Last name of the Teacher
         public string? TeacherLName { get; set;}
-        // Teacher number
+        // The employee number of the Teacher
         public string? EmployeeNumber { get;set; }
-        // Teacher hiredate
+        // The hiring date of the Teacher
         public DateTime hiredate { get; set; }
-        //Teacher salary
-
+        //Teacher's salary
         public double salary { get; set; }    
     }
 }

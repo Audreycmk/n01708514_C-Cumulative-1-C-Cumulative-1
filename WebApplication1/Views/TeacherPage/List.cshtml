@@ -1,13 +1,45 @@
 @model IEnumerable<Cumulative1.Models.Teacher>
+
 <style>
-    h1 {color: pink;}
+    body {
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        background-color: #ffe6f2; 
+        color: white;
+    }
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px #ffb6c1; 
+    }
+    div {
+        background-color: #ffccd5; 
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 10px;
+        width: 60%;
+        text-align: center;
+        box-shadow: 2px 2px 5px #ffa3b1; /* Soft pink shadow */
+    }
+    div a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    div a:hover {
+        color: #ffe6f2;
+    }
 </style>
-<h1>List of Students</h1>
+
+<h1>List of Teachers</h1>
 
 @foreach (Cumulative1.Models.Teacher CurrentTeacher in Model)
 {
     <div>
-        <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId">@CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName</a>
+        <a href="/TeacherPage/Show/@CurrentTeacher.TeacherId">
+            @CurrentTeacher.TeacherFName @CurrentTeacher.TeacherLName
+        </a>
     </div>
-
 }
